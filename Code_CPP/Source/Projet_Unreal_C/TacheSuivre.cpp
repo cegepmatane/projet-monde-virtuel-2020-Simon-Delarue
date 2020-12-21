@@ -10,7 +10,7 @@ EBTNodeResult::Type UTacheSuivre::ExecuteTask(UBehaviorTreeComponent& proprietai
 
 	if(cible)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, "Avance vers Ennemi");
+		//GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, "Avance vers Ennemi");
 		ennemisIntelligence->MoveToActor(cible, 3.f, true, true, true, 0, true);
 		return EBTNodeResult::Succeeded;
 	}

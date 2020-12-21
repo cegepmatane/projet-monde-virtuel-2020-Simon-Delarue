@@ -6,6 +6,7 @@
 void ABebeGeant::setAggro(bool etat)
 {
 	this->aggro = etat;
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("L'etat du Bebe a ete change aggro :"+ aggro));
 }
 void ABebeGeant::activerAggro()
 {

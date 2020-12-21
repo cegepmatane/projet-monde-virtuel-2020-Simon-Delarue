@@ -20,7 +20,7 @@ void UServiceChercherJoueur::TickNode(UBehaviorTreeComponent& proprietaire, uint
 		AProjet_Unreal_CCharacter * cible = Cast<AProjet_Unreal_CCharacter>(GetWorld()->GetFirstPlayerController()->GetPawn());
 		if (cible) 
 		{
-			GEngine->AddOnScreenDebugMessage(-1,2.f,FColor::Green, "Cible trouvee");
+			//GEngine->AddOnScreenDebugMessage(-1,2.f,FColor::Green, "Cible trouvee");
 			proprietaire.GetBlackboardComponent()->SetValue<UBlackboardKeyType_Object>(ennemiIntelligence->ennemiCle, cible);
 		}
 	}
